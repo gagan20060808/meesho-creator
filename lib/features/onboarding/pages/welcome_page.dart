@@ -71,9 +71,9 @@ class WelcomePage extends StatelessWidget {
                   // 3D Floating phone mockup
                   _buildPhoneMockup()
                       .animate(onPlay: (c) => c.repeat(reverse: true))
-                      .translateY(
-                        begin: -10,
-                        end: 10,
+                      .slideY(
+                        begin: -0.03,
+                        end: 0.03,
                         duration: const Duration(milliseconds: 3000),
                         curve: Curves.easeInOut,
                       ),
